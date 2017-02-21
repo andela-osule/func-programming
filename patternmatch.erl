@@ -6,9 +6,11 @@ maxThree(X, Y, Z) ->
     max(X, Y), 
   Z).
 
-howManyEqual(X, Y, Z) ->
-  if 
-    (X == Y) and (Y == Z) -> 3;
-    (X == Y) or (Y == Z) -> 2;
-    true -> 0
-  end.
+howManyEqual(X, X, X) ->
+  3;
+howManyEqual(X, X, _) ->
+  2;
+howManyEqual(X, _, X) ->
+  2;
+howManyEqual(_, X, X) ->
+  2.
