@@ -5,3 +5,5 @@
 
 pieces(N) when N==0 -> 1;
 pieces(N) -> N + pieces(N-1).
+
+% TODO: multidimensions
