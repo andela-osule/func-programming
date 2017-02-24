@@ -1,6 +1,8 @@
 -module(tail).
 -export([fib/1, fac/1, perfect/1]).
 
+% Using tail recursion
+
 % P is previous value
 % C  is current value 
 
